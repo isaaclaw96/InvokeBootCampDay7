@@ -1,0 +1,291 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    font-family: "Roboto";
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0.75em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#second-header {
+    display: none;
+}
+#second-header ul {
+    background-color: #505050;
+}
+#second-header ul li {
+    margin: 0 15px;
+    
+}
+header ul {
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+h2, h3, h4, h5 {
+    font-weight: normal;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px ;
+}
+#first-text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+#first-text h1 {
+    margin: 40px 0;
+    font-size: 80px;
+    font-weight: normal;
+    max-width: 320px;
+}
+#second-h1 {
+    display: none;
+}
+#section-second {
+    text-align: justify;
+}
+#section-second p {
+    font-size: 15px;
+}
+.my-name {
+    margin-bottom: 30px;   
+}
+hr {
+    width: 180%;
+    height: 1px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+#skills-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0;
+}
+.skill-bar {
+    width: 100%;
+    background-color: gray;
+    height: 25px;
+    margin: 15px 0;
+}
+
+#clients-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    padding: 25px 0;
+}
+.clients-text {
+    margin: 15px 0;
+}
+#download-button {
+    background-color: white;
+    color: black;
+    margin: 20px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+#package-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    text-align: center;
+}
+#package-list {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: gray;
+    border: 1px solid white;
+}
+.package-header {
+    padding: 25px;
+    background-color: red;
+}
+#package-list p {
+    padding: 25px;
+    border-bottom: 2px solid black;
+}
+
+#per-month {
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.sign-up{
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#comment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.comment-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.comment-content img {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+.photo-holder img{
+    margin: 5px 0;
+    width: 100%;
+}
+#contact-details {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: 12px;
+    /* width: 100%; */
+}
+.contact-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.fa-phone, .fa-globe-americas, .fa-inbox{
+    margin-right: 15px;
+}
+#contact-container {
+    width: 100%;
+
+}
+#section-seven p {
+    font-size: 15px;
+    text-align: center;
+}
+.contact-message {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    margin: 5px 0;
+    color: black;
+    text-align: left;
+    padding: 8px 5px;
+    font-size: 15px;
+
+}
+#message-button {
+    background-color: white;
+    color: black;
+    margin: 20px 0;
+    /* font-size: 12px; */
+    padding: 12px;
+    text-align: center;
+}
+.fa-sms { font-size: 12px;}
+
+@media (min-width:1000px) {
+    header {
+        width: 100px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    header ul {
+        display: none;
+    }
+    #second-header {
+        display: block;
+    }
+    section {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    #first-text h1 {
+        display: none;
+    }
+    #first-text #second-h1 {
+        display: block;
+        max-width: none;
+    }
+    #clients-bar {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #package-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 15px;
+    }
+    #package-list {
+        margin: 15px;
+    }
+    #comment-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #photo-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-holder {
+        margin: 15px;
+        width: calc(100%/2);
+    }
+    .photo-holder img {
+        width: 100%;
+    }
+}

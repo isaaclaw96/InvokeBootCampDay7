@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Type</title>
+        <style>
+            #hpbar {
+                width: 100px;
+                height: 100px;
+                background-color: greenyellow;
+                transition: all 0.5s;
+            }
+        </style>
+        <script>
+            //type your js code here in the script tag
+            var apple = 5;
+            var orange = 7;
+
+
+            var iphone = 100;
+            var iwatch = "50"
+            //output print
+            console.log(apple + orange);
+            console.log(iphone + iwatch);
+
+            var name1 = "Isaac";
+            console.log ("My name is", name1); //string + var
+
+
+
+            //to target the #para
+            // document.getElementById ('para').innerHTML = "Hello World!";
+
+            function init() {
+                document.getElementById('para').innerHTML ="Hello World Im from init!";
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <div id="container">
+            <p id="para"></p>
+            <h1 id="score"></h1>
+
+            <button onclick="increase(2)">+</button>
+            <button onclick="decrease(2)">-</button>
+            <button onclick="submit()">submit</button>
+
+            <button onclick="count(2, 'red')">+</button>
+            <button onclick="count(-2, 'green')">-</button>
+
+            <div id="hpbar"></div>
+
+
+        </div>
+
+        <script>
+            var scoreText = document.getElementById('score');
+            var score = 0;
+            var hpBar = document.getElementById('hpbar');
+
+            hpBar.style.width = '0px';
+
+
+            scoreText.innerHTML = score;
+            scoreText.style.color = "blue";
+            scoreText.style.fontSize = "70px";
+
+            function increase (num) {
+                score = score + num;
+                // console.log(score);
+                scoreText.innerHTML = score;
+            }
+            function decrease(num) {
+                score = score - num;
+                scoreText.innerHTML = score;
+            }
+
+            function submit() {
+                console.log(score);
+                score = 0;
+                scoreText.innerHTML = score;
+            }
+            function count (num, textColor) {
+                score = score + num
+                scoreText.innerHTML = score;
+                scoreText.style.color = textColor
+                hpBar.style.width = score + 'px';
+            }
+        </script> 
+    </body>
+</html>
