@@ -42,7 +42,7 @@ header ul li {
     margin: 0 15px;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 section {
@@ -130,33 +130,43 @@ hr {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    
     text-align: center;
 }
 #package-list {
     width: 100%;
     margin-bottom: 30px;
-    background-color: gray;
-    border: 1px solid white;
+    background-color: lightgray;
 }
 .package-header {
     padding: 25px;
-    background-color: red;
+    background-color: gray;
+    border: 1px solid white;
 }
 #package-list p {
     padding: 25px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid white;
 }
 
 #per-month {
     padding: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid white;
 }
 
 .sign-up{
     color: black;
     font-size: 15px;
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.sign-up h6 {
+    max-width: 150px;
+    background-color: white;
+    /* position: absolute; */
+    left: 140px;
+    padding: 15px;
 }
 
 #comment-container {
